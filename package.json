@@ -1,0 +1,17 @@
+{
+  "name": "grafana-ping-datasource",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit && esbuild src/module.ts --bundle --format=cjs --target=es2018 --external:@grafana/data --external:@grafana/ui --external:react --external:react-dom --outfile=dist/module.js",
+    "dev": "esbuild src/module.ts --bundle --format=cjs --target=es2018 --external:@grafana/data --external:@grafana/ui --external:react --external:react-dom --watch --outfile=dist/module.js"
+  },
+  "devDependencies": {
+    "@grafana/data": "^11.0.0",
+    "@grafana/ui": "^11.0.0",
+    "@types/react": "^18.0.0",
+    "esbuild": "^0.24.0",
+    "react": "^18.2.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "datasource",
+  "name": "Ping",
+  "id": "grafana-ping-datasource",
+  "metrics": true,
+  "backend": true,
+  "executable": "gpx_ping",
+  "info": {
+    "description": "Ping any server and plot response time over time",
+    "author": {
+      "name": "You"
+    },
+    "keywords": ["ping", "icmp", "latency", "network"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "version": "1.0.0",
+    "updated": "2025-01-01"
+  }
+}
